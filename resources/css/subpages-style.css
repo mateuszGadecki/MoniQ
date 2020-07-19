@@ -1,0 +1,384 @@
+/*--------------------------------------------------ALL SUBPAGES--------------------------------------------------*/
+/*----------Basic Setup----------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 150px;
+}
+/*----------Reusable components----------*/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/*----------Main navigation----------*/
+nav {
+    background-color: #240a16;
+    padding: 5px 0 15px 0;
+}
+
+.right-site-nav {
+    list-style: none;
+    float: right;
+}
+
+.right-site-nav li {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 105%;
+    margin-top: 18px;
+}
+
+.right-site-nav li a:link,
+.right-site-nav li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.right-site-nav li a:hover,
+.right-site-nav li a:active {
+    border-bottom: 2px solid rgb(156, 18, 110);
+}
+/*----------Logo----------*/
+.logo {
+    text-decoration: none;
+    float: left;
+    font-family: Aref Ruqaa;
+    font-size: 220%;
+    color: #fff;
+}
+
+.q {
+    color: rgb(156, 18, 110);
+    float: right;
+}
+/*--------------------------------------------------Cennik.html--------------------------------------------------*/
+.section-price-list {
+    background-color: #ffff;
+    color: #000;
+    letter-spacing: 1px;
+    line-height: 145%;
+}
+
+table {
+    font-size: 75%;
+    width: 100%;
+}
+
+tbody { width: 100%; }
+
+caption {
+    text-align: center;
+    font-size: 110%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 120%;
+    color: #000;
+    border-bottom: 2px solid #ab1479;
+}
+
+.subtitle {
+    text-decoration: none;
+    text-align: center;
+    font-size: 90%;
+    color: #000;
+}
+/*----------------------- Table with 5 COLUMNS -----------------------*/
+.first-column { width: 28%; }
+.other-columns { width: 18%; }
+/*----------------------- Table with 3 COLUMNS -----------------------*/
+.first-col { width: 36%; }
+.other-col { width: 32%; }
+.middle-col { text-align: center; }
+.right-col { text-align: right; }
+/*--------------------------------------------------Galeria.html--------------------------------------------------*/
+/*--------------------------------------------------Kontakt.html--------------------------------------------------*/
+.section_contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/background-contact.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.section_drive{ padding: 20px 0px; }
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contact {
+    width: 540px;
+    float: left;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+input[type=text],
+input[type=email] {
+    width: 350px;
+    padding: 5px 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 80%;
+}
+
+input[type=text]:focus,
+input[type=email]:focus {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #fff;
+}
+
+textarea {
+    width: 350px;
+    height: 50px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    transition: height 0.3s ease-in-out;
+    font-size: 80%;
+}
+textarea:focus { height: 155px; }
+
+select {
+    width: 350px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 80%;
+}
+
+label{
+    padding-top: 10px;
+    font-size: 90%;
+}
+
+.submit-btn{
+    position: absolute;
+    top: 26.75%;
+    left: 13%;
+    background: rgb(156, 18, 110);
+    display: block;
+    padding: 8px 25px;
+    font-size: 90%;
+    color: #fff;
+    border: 1px solid rgb(156, 18, 110);
+    border-radius: 200px;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover,
+.submit-btn:active {
+    background-color: #8d1063;
+}
+
+.information {
+    width: 540px;
+    text-align: left;
+    color: #fff;
+    padding: 20px 0px;
+}
+
+p {
+    text-align: left;
+    margin-left: 165px;
+}
+
+h2,
+h3 {
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    padding: 15px 0px;
+    font-size: 120%;
+}
+h2 { margin-left: 165px; color: rgb(156, 18, 110); }
+h3 { text-align: center; margin-bottom: 7px; }
+
+.open-hours { margin-top: 10px; }
+
+.name,
+.e-mail,
+.find-us,
+.message {
+    padding: 3px;
+}
+
+.map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Przyciski animacja ładowania */
+.elem-is-busy {
+    pointer-events: none;
+    opacity:0.5;
+}
+
+.elem-is-busy::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-right-color: rgba(0,0,0,0.7);
+    transform: translate(-50%, -50%) rotate(0deg);
+    content:"";
+    animation: rotateSingleLoading 0.3s infinite linear;
+    z-index: 10;
+}
+
+@keyframes rotateSingleLoading {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+/*--------------------------------------------------Oferta.html--------------------------------------------------*/
+/*--------------------------------------------------oNas.html--------------------------------------------------*/
+.section_workers {
+    height: 100vh;
+}
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 175px;
+}
+
+.workers-photo {
+    padding: 50px 0px;
+    border-radius: 50%;
+}
+
+.split-left,
+.split-right {
+    padding-bottom: 150px;
+    height: 100vh;
+    width: 50%;
+    display: block;
+    float: left;
+}
+
+.split-left {
+    background-color: #ffe3fb; }
+.split-right {
+    background-color: #fff4fe; }
+
+.description {
+    max-width: 454px;
+    margin: 0 auto;
+}
+
+/*--------------------------------------------------Footer--------------------------------------------------*/
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #310e1fec;
+    color: #fff;
+}
+
+footer div ul { margin-top: 40px; }
+
+footer div p {
+    overflow: hidden;
+    text-align: center;
+    font-size: 90%;
+}
+
+.footer-links {
+    list-style: none;
+    float: left;
+}
+
+.footer-socials {
+    list-style: none;
+    float: right;
+}
+
+.footer-links li,
+.footer-socials li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.footer-links li:last-child,
+.footer-socials li:last-child { margin-right: 0; }
+
+.footer-links li a:link,
+.footer-socials li a:link,
+.footer-links li a:visited,
+.footer-socials li a:visited {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s;
+}
+
+.footer-socials li a:link,
+.footer-socials li a:visited {
+    font-size: 130%;
+}
+
+.footer-links li a:link,
+.footer-links li a:visited {
+    font-size: 90%;
+    color: #718093;
+}
+
+.footer-links li a:hover,
+.footer-links li a:active {
+    color: #fff;
+}
+
+.instagram:hover,
+.facebook:hover,
+.whatsapp:hover {
+    transition: color 0.2s, transform 0.2s;
+    transform: scale(1.2);
+}
+
+.instagram:hover {
+    color: #c32aa3;
+}
+
+.facebook:hover {
+    color: #1877f2;
+}
+
+.whatsapp:hover {
+    color: #25d366;
+}
