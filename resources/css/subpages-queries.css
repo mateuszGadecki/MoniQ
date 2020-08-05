@@ -1,0 +1,184 @@
+/* Big tablet to 1200px (widths smaller than the 1140px) */
+@media only screen and (max-width: 1200px) {
+/*--------------------------------------------------ALL SUBPAGES--------------------------------------------------*/
+.row { padding: 0 2%; }
+/*--------------------------------------------------Cennik.html--------------------------------------------------*/
+/*--------------------------------------------------Galeria.html--------------------------------------------------*/
+/*--------------------------------------------------Kontakt.html--------------------------------------------------*/
+/*--------------------------------------------------Oferta.html--------------------------------------------------*/
+/*--------------------------------------------------oNas.html--------------------------------------------------*/
+}
+/* Small tablet to big tablet: from 768 to 1023px */
+@media only screen and (max-width: 1023px) {
+/*--------------------------------------------------ALL SUBPAGES--------------------------------------------------*/
+    body { font-size: 17px; }
+    .row { padding: 0 2%; }
+/*--------------------------------------------------Cennik.html--------------------------------------------------*/
+    .col {
+        width: 100%;
+        float: none;
+        margin: 0 0 1% 0%;
+    }
+    .box {
+        width: 80%;
+         margin: 40px auto;
+        }
+    .center { margin-top: 15px; }
+    .row { width: 100%; }
+    .footer-links { margin-left: 20px; }
+    .footer-socials { margin-right:25px; }
+/*--------------------------------------------------Galeria.html--------------------------------------------------*/
+/*--------------------------------------------------Kontakt.html--------------------------------------------------*/
+.section_contact { height: 140vh; }
+.information {
+    font-size: 19px;
+    width: 100%;
+}
+.left {
+    float: left;
+    width: 50%;
+    margin-top: 80px;
+}
+.right {
+    float: right;
+    width: 50%;
+    display: block;
+    text-align: right;
+    margin-top: 80px;
+}
+
+p {
+    text-align: unset;
+    margin-left: 0;
+}
+h2 { margin-left: 0;  }
+/*Contact Form*/
+.contact {
+    width: 100%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+}
+.center-form {
+    margin: 0 10%;
+    width: 80%;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea  {
+    width: 70%;
+    margin: 2px 15%;
+}
+h3 { font-size: 150%; }
+label,
+.submit-btn { margin-left: 15%; }
+textarea,
+textarea:focus { height: 80px; }
+.map { width: 100%; }
+
+/*--------------------------------------------------Oferta.html--------------------------------------------------*/
+/*--------------------------------------------------oNas.html--------------------------------------------------*/
+.split-left,
+.split-right {
+    padding-bottom: 0;
+    width: 100%;
+    float: none;
+    height: 100vh;
+}
+.description {
+    max-width: 550px;
+}
+.section_workers { height: 200vh; }
+}
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+/*--------------------------------------------------ALL SUBPAGES--------------------------------------------------*/
+    body {
+        font-size: 15px;
+        margin-bottom: 110px;
+        }
+    .right-site-nav {
+        display: none;
+        color: orange ;
+    }
+    .logo { margin-left: 15px; }
+    .mobile-nav-icon { display: inline-block; }
+    .right-site-nav li { display: block; }
+    .right-site-nav li a:link,
+    .right-site-nav li a:visited {
+        display: block;
+        border: 0;
+    }
+    nav {
+        position: fixed;
+        width: 100%;
+    }
+    footer {
+        font-size: 13px;
+        height: 110px;
+    }
+    footer div ul { margin-top: 25px; }
+    .footer-links li,
+    .footer-socials li { margin-right: 15px; }
+    .footer-links { margin-left: 10px; }
+    .footer-socials { margin-right: 15px; }
+    section { margin: 0; }
+/*--------------------------------------------------Cennik.html--------------------------------------------------*/
+    .box {
+        width: 85%;
+        margin: 25px auto;
+    }
+    .section-price-list { margin-top: 60px; }
+/*----------------------- Table with 3 COLUMNS -----------------------*/
+    .width-36_percent { width: 40%; }
+    .width-32_percent { width: 40%; }
+    .dash-width-32_percent { width: 20%; }
+/*--------------------------------------------------Galeria.html--------------------------------------------------*/
+    h4 { margin-top: 60px; }
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+/*--------------------------------------------------Kontakt.html--------------------------------------------------*/
+    .section_contact { height: 160vh; }
+    .contact { padding-top: 65px; }
+    .center-form {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .left,
+    .right { margin-top: 150px; }
+/*--------------------------------------------------Oferta.html--------------------------------------------------*/
+/*--------------------------------------------------oNas.html--------------------------------------------------*/
+    .split-left { margin-top: 60px; }
+    .split-left,
+    .split-right {
+        padding-bottom: 0;
+        width: 100%;
+        float: none;
+        height: 100vh;
+    }
+    .description {
+        max-width: 400px;
+    }
+    .section_workers { height: 200vh; }
+}
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+/*--------------------------------------------------ALL SUBPAGES--------------------------------------------------*/
+/*--------------------------------------------------Cennik.html--------------------------------------------------*/
+/*----------------------- Table with 4 COLUMNS -----------------------*/
+.table-4col-width-18_percent { width: 5%; }
+.table-4col-dash-width-18_percent { width: 5%; }
+.table-4col-width-32_percent { width: 40%; }
+/*----------------------- Table with 3 COLUMNS -----------------------*/
+.width-36_percent { width: 60%; }
+.width-32_percent { width: 30%; }
+.dash-width-32_percent { width: 10%; }
+/*--------------------------------------------------Galeria.html--------------------------------------------------*/
+/*--------------------------------------------------Kontakt.html--------------------------------------------------*/
+/*--------------------------------------------------Oferta.html--------------------------------------------------*/
+/*--------------------------------------------------oNas.html--------------------------------------------------*/
+}

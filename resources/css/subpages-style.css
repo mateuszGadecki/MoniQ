@@ -21,9 +21,7 @@ html {
     position: relative;
     min-height: 100%;
 }
-body {
-    margin-bottom: 150px;
-}
+body { margin-bottom: 150px; }
 /*----------Reusable components----------*/
 .row {
     max-width: 1140px;
@@ -33,6 +31,8 @@ body {
 nav {
     background-color: #240a16;
     padding: 5px 0 15px 0;
+    z-index: 10;
+
 }
 
 .right-site-nav {
@@ -57,8 +57,18 @@ nav {
 }
 
 .right-site-nav li a:hover,
-.right-site-nav li a:active {
-    border-bottom: 2px solid rgb(156, 18, 110);
+.right-site-nav li a:active { border-bottom: 2px solid rgb(156, 18, 110); }
+
+.mobile-nav-icon {
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-icon {
+    color: #fff;
+    font-size: 200%;
+    margin: 10px 15px 0 0;
 }
 /*----------Logo----------*/
 .logo {
@@ -106,29 +116,75 @@ h1 {
     font-size: 90%;
     color: #000;
 }
-/*----------------------- Table with 5 COLUMNS -----------------------*/
-.first-column { width: 28%; }
-.other-columns { width: 18%; }
+
+
+/*----------------------- Table with 4 COLUMNS -----------------------*/
+.table-4col-width-18_percent { width: 18%; }
+.table-4col-dash-width-18_percent { width: 18%; }
+.table-4col-width-32_percent { width: 32%; }
 /*----------------------- Table with 3 COLUMNS -----------------------*/
-.first-col { width: 36%; }
-.other-col { width: 32%; }
+.width-36_percent { width: 36%; }
+.width-32_percent { width: 32%; }
+.dash-width-32_percent { width: 32%; }
 .middle-col { text-align: center; }
 .right-col { text-align: right; }
 /*--------------------------------------------------Galeria.html--------------------------------------------------*/
+
+h4 {
+    font-size: 220%;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 20px 0;
+}
+
+h4:after {
+    display: block;
+    height: 2px;
+    background-color: #9c126e;
+    margin: 0 auto;
+    width: 500px;
+    content: " ";
+    margin-top: 10px;
+}
+
+.my-gallery {
+    display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.my-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.my-gallery figure {
+    display: block;
+    float: left;
+
+    width: 100%;
+    overflow: hidden;
+}
+.my-gallery figcaption { display: none; }
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.animate__animated.animate__fadeIn { animation-delay: 0.5s; }
+.slow-animation { animation-delay: 0.9s; }
 /*--------------------------------------------------Kontakt.html--------------------------------------------------*/
 .section_contact {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/background-contact.jpg);
     background-size: cover;
+    background-position: center;
     height: 100vh;
 }
 
 .section_drive{ padding: 20px 0px; }
-
-.contact-form {
-    width: 60%;
-    margin: 0 auto;
-}
-
 .contact {
     width: 540px;
     float: left;
@@ -173,15 +229,12 @@ select {
     font-size: 80%;
 }
 
-label{
+label {
     padding-top: 10px;
     font-size: 90%;
 }
 
-.submit-btn{
-    position: absolute;
-    top: 26.75%;
-    left: 13%;
+.submit-btn {
     background: rgb(156, 18, 110);
     display: block;
     padding: 8px 25px;
@@ -226,49 +279,16 @@ h3 { text-align: center; margin-bottom: 7px; }
 .name,
 .e-mail,
 .find-us,
-.message {
-    padding: 3px;
-}
+.message { padding: 3px; }
 
 .map {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-/* Przyciski animacja ładowania */
-.elem-is-busy {
-    pointer-events: none;
-    opacity:0.5;
-}
-
-.elem-is-busy::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    border-right-color: rgba(0,0,0,0.7);
-    transform: translate(-50%, -50%) rotate(0deg);
-    content:"";
-    animation: rotateSingleLoading 0.3s infinite linear;
-    z-index: 10;
-}
-
-@keyframes rotateSingleLoading {
-    from {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-    to {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
 /*--------------------------------------------------Oferta.html--------------------------------------------------*/
 /*--------------------------------------------------oNas.html--------------------------------------------------*/
-.section_workers {
-    height: 100vh;
-}
+.section_workers { height: 100vh; }
 
 .centered {
     display: block;
@@ -284,23 +304,18 @@ h3 { text-align: center; margin-bottom: 7px; }
 
 .split-left,
 .split-right {
-    padding-bottom: 150px;
-    height: 100vh;
-    width: 50%;
     display: block;
+    height: 100%;
+    width: 50%;
     float: left;
 }
-
-.split-left {
-    background-color: #ffe3fb; }
-.split-right {
-    background-color: #fff4fe; }
+.split-left { background-color: #ffe3fb; }
+.split-right { background-color: #fff4fe; }
 
 .description {
     max-width: 454px;
     margin: 0 auto;
 }
-
 /*--------------------------------------------------Footer--------------------------------------------------*/
 footer {
     position: absolute;
@@ -311,7 +326,6 @@ footer {
     background-color: #310e1fec;
     color: #fff;
 }
-
 footer div ul { margin-top: 40px; }
 
 footer div p {
@@ -347,22 +361,16 @@ footer div p {
     color: #fff;
     transition: color 0.2s;
 }
-
 .footer-socials li a:link,
-.footer-socials li a:visited {
-    font-size: 130%;
-}
+.footer-socials li a:visited { font-size: 130%; }
 
 .footer-links li a:link,
 .footer-links li a:visited {
     font-size: 90%;
     color: #718093;
 }
-
 .footer-links li a:hover,
-.footer-links li a:active {
-    color: #fff;
-}
+.footer-links li a:active { color: #fff; }
 
 .instagram:hover,
 .facebook:hover,
@@ -371,14 +379,7 @@ footer div p {
     transform: scale(1.2);
 }
 
-.instagram:hover {
-    color: #c32aa3;
-}
-
-.facebook:hover {
-    color: #1877f2;
-}
-
-.whatsapp:hover {
-    color: #25d366;
-}
+.instagram:hover { color: #c32aa3;}
+.facebook:hover { color: #1877f2; }
+.whatsapp:hover { color: #25d366; }
+.center { margin: 0 auto; }

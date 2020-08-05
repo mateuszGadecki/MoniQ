@@ -1,0 +1,94 @@
+/* Big tablet to 1200px (widths smaller than the 1140px) */
+@media only screen and (max-width: 1200px) {
+    .under-nav-text {
+        width: 100%;
+        padding: 0 2%;
+    }
+    .row { padding: 0 2%; }
+    .corona {
+        width: 85%;
+        height: 85%;
+        margin: 25px auto;
+    }
+    p { padding: 6px 5px 0 5px; }
+    .date { padding: 10px 8px; }
+    .title { padding: 8px; }
+}
+/* Small tablet to big tablet: from 768 to 1023px */
+@media only screen and (max-width: 1023px) {
+    body { font-size: 17px; }
+    .corona { width: 100%; }
+    .footer-links { margin-left: 20px; }
+    .footer-socials { margin-right:25px; }
+    .center { margin-top: 15px; }
+    .middle-col { height: 104%; }
+    .corona {
+        width: 74%;
+        height: 74%;
+        margin: 20px auto;
+    }
+    header { transform: translate3d(0,0,0); }
+    .under-nav-text { top: 50%; }
+
+}
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    /*Navigation*/
+    .right-site-nav { display: none; }
+    .logo { margin-left: 15px; }
+    .mobile-nav-icon { display: inline-block; }
+    .right-site-nav li { display: block; }
+    .right-site-nav li a:link,
+    .right-site-nav li a:visited {
+        display: block;
+        border: 0;
+    }
+    nav { width: 100%; }
+    /*Footer*/
+    footer {
+        font-size: 13px;
+        height: 110px;
+    }
+    footer div ul { margin-top: 25px; }
+    .footer-links li,
+    .footer-socials li { margin-right: 15px; }
+    .footer-links { margin-left: 10px; }
+    .footer-socials { margin-right: 15px; }
+    /*Other*/
+    body {
+        font-size: 15px;
+        margin-bottom: 110px;
+    }
+    .row,
+    .under-nav-text { padding: 0 4%; }
+    .col {
+        width: 100%;
+        margin: 0;
+    }
+    .section-news { height: 140vh; }
+    .news { height: 20%; }
+    .middle-col,
+    .right-col { border: 0; }
+    .middle-col {
+        background-color:
+        #eee; width: 100%;
+    }
+    section { padding: 30px 0px; }
+    h2:after,
+    h3:after { width: 80%; }
+    .corona {
+        width: 75%;
+        height: 75%;
+        margin: 25px auto;
+    }
+    .section-testimonials { height: 130vh; }
+    cite img { height: 40px; }
+    .section-photos { padding: 20px 0; }
+}
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    .section-testimonials { height: 170vh; }
+    .section-news { height: 160vh; }
+    section { padding: 25px 0; }
+}
+
